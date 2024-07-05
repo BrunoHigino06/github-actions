@@ -1,0 +1,14 @@
+name: 'Terraform Action'
+description: 'Run Terraform commands'
+inputs:
+  terraform-version:
+    description: 'Version of Terraform to use'
+    required: true
+    default: 'latest'
+  command:
+    description: 'Terraform command to execute'
+    required: true
+    default: 'plan'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
