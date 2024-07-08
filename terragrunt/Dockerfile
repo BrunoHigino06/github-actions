@@ -21,7 +21,7 @@ RUN curl -L https://github.com/gruntwork-io/terragrunt/releases/download/v0.35.3
 
 # Copy entrypoint script
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.py
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Set the entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
