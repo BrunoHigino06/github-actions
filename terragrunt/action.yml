@@ -10,4 +10,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: 'python3 /usr/local/bin/entrypoint.py'
+  entrypoint: '/usr/local/bin/entrypoint.py'
