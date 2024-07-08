@@ -9,5 +9,5 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://brunohigino06/terragrunt-action:latest'
+  image: 'Dockerfile'
   entrypoint: '/usr/local/bin/entrypoint.py'
