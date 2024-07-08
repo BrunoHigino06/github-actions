@@ -1,10 +1,13 @@
 name: 'Terragrunt Action'
-description: 'An action to run Terragrunt commands using a custom Docker image.'
+description: 'Run Terragrunt commands in GitHub Actions'
+
 inputs:
   command:
-    description: 'The Terragrunt command to run (plan or apply)'
+    description: 'Terragrunt command to execute (plan, apply, etc.)'
     required: true
+    default: 'plan'
+
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  entrypoint: python3 /usr/local/bin/entrypoint.py
+  image: 'docker://brunohigino06/terragrunt-action:latest'
+  entrypoint: ['/usr/local/bin/entrypoint.py']
