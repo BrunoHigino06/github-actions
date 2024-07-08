@@ -10,7 +10,7 @@ case "${1}" in
     terragrunt apply --auto-approve --terragrunt-non-interactive
     ;;
   *)
-    echo "Command not found: ${1}"
+    echo "Test: ${1}"
     exit 1
     ;;
 esac
