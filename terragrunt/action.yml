@@ -10,4 +10,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://brunohigino06/terragrunt-action:latest'
-  entrypoint: ['/usr/local/bin/entrypoint.py']
+  entrypoint: '/usr/local/bin/entrypoint.py'
