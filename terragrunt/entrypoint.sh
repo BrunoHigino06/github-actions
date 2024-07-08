@@ -2,4 +2,4 @@
 set -e
 
 # Print the current working directory
-pwd
+echo 'hello world'
