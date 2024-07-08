@@ -1,9 +1,10 @@
 name: 'Terragrunt Action'
-description: 'Run Terragrunt commands'
+description: 'An action to run Terragrunt commands using a custom Docker image.'
 inputs:
   command:
-    description: 'Terragrunt command to execute'
+    description: 'The Terragrunt command to run (plan or apply)'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  entrypoint: ['/usr/local/bin/entrypoint.py']
