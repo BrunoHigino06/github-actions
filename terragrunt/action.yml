@@ -1,14 +1,5 @@
 name: 'Terragrunt Action'
 description: 'Run Terragrunt commands'
-inputs:
-  Terragrunt-version:
-    description: 'Version of Terragrunt to use'
-    required: true
-    default: 'latest'
-  command:
-    description: 'Terragrunt command to execute'
-    required: true
-    default: 'plan'
 runs:
   using: 'docker'
   image: 'Dockerfile'
