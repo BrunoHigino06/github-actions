@@ -4,7 +4,7 @@ set -e
 
 if [ "$1" == "plan" ]; then
   echo "Running terragrunt plan..."
-  ls
+  terragrunt -v
 elif [ "$1" == "apply" ]; then
   echo "Running terragrunt apply..."
   terragrunt apply --auto-approve --terragrunt-non-interactive
