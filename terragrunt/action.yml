@@ -5,7 +5,6 @@ inputs:
   command:
     description: 'Terragrunt command to execute (plan, apply, etc.)'
     required: true
-    default: 'plan'
 
 runs:
   using: 'docker'
