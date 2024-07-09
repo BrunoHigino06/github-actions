@@ -24,7 +24,7 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Set the entrypoint
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["python3", "/usr/local/bin/entrypoint.py"]
 
 # Clean up
 RUN apt-get clean && \
