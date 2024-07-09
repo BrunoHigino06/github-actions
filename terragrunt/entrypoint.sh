@@ -1,5 +1,14 @@
 #!/bin/bash
+
 set -e
 
-# Print the current working directory
-echo 'hello world'
+if [ "$1" == "plan" ]; then
+  echo "Running terragrunt plan..."
+  terragrunt plan --terragrunt-non-interactive
+elif [ "$1" == "apply" ]; then
+  echo "Running terragrunt apply..."
+  terragrunt apply --auto-approve --terragrunt-non-interactive
+else
+  echo "Unknown command: $1"
+  exit 1
+fi
